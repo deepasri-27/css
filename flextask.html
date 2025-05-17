@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexTask</title>
+    <style>
+        .container{
+            display:flex;
+            justify-content: center;
+            flex-wrap:wrap;
+        }
+        .one{
+         background-color: green;
+         height:150px;
+         flex-basis:100%;
+        }
+        .two{
+         background-color: lightblue;
+         height:150px;
+         flex-basis:27%;
+         flex-grow:1;
+         margin:2px;
+        }
+        .three{
+          background-color: grey;
+          height:150px;
+          flex-basis: 20%;
+          flex-grow:1;
+          margin:2px;
+        }
+        @media screen and (max-width:800px){
+           
+            .two{
+             flex-basis:100%;
+            }
+            .three{
+             flex-basis: 40%;
+            }
+        }
+        @media screen and (max-width:600px){
+            .three{
+                flex-basis:100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="two"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="three"></div>
+        <div class="three"></div>
+        <div class="three"></div>
+
+
+    </div>
+    
+</body>
+</html>

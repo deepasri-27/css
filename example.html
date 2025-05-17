@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Example</title>
+    <style>
+       .one{
+        margin:5px;
+        float:left;
+        display:flex;
+       }
+       @media screen and (max-width:600px){
+        .one{
+
+            float:none;
+            border:solid black 2px;
+            justify-content: center;
+        }
+       }
+       img{
+        width:200px;
+        height:100px;
+       }
+     
+    </style>
+</head>
+<body>
+    <div class="one">
+        <img src="https://media.istockphoto.com/id/2153576766/photo/eastern-bluebird-in-flight-couple-male-and-female.webp?a=1&b=1&s=612x612&w=0&k=20&c=qhHbSuObCbnVBjtiIM724EnBxPcxE8lUi5FBDIWY4Jg=" alt="Sparrow">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum iure error asperiores doloribus, debitis ipsam est aliquam molestiae aliquid sit assumenda, optio quod maiores fuga aperiam provident necessitatibus, incidunt a?</p>
+    </div>
+    
+</body>
+</html>
